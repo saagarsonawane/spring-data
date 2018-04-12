@@ -1,4 +1,3 @@
 # spring-data application details.
 
-This is basic spring data applciation. It consists of spring-boot-starter-data-jpa and spring-boot-starter-web modules. 
-It used in memory DB H2 for CRUD operations on 'user' resource.
+This is basic spring boot application. It uses spring-boot-starter-data-jpa and spring-boot-starter-web modules.
