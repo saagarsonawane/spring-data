@@ -12,23 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * Created by e059009 on 09-Apr-18.
- */
-
 @RestController
-@RequestMapping("/v1/users")
+@RequestMapping("/v1")
 public class UserController {
 
     @Autowired
     private UserJPARepository userJPARespository;
 
-    @GetMapping("/all")
+    @GetMapping("/user/all")
     public List<User> getUsers(){
         return userJPARespository.findAll();
     }
 
-    @GetMapping("/{name}")
+    @GetMapping("/user/{name}")
     public User findByName(@PathVariable final String name){
         return userJPARespository.findByName(name);
     }
